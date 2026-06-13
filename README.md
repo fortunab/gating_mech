@@ -1,4 +1,4 @@
-# HistoDyn::BioGater Project 
+# Project 
 
 ## Installation
 
