@@ -17,9 +17,9 @@ print("\n[5/5] Exporting results...")
 print("\nPipeline completed successfully.")
 
 files = [
-    "src/reproduce_tables.py",
-    "src/reproduce_figure6.py",
-    "src/reproduce_gate_figures.py",
-    "src/reproduce_federated_and_ablation.py",
-    "src/reproduce_activation_grid.py",
+    "src/ts.py",
+    "src/fig.py",
+    "src/gate_figures.py",
+    "src/federated_and_ablation.py",
+    "src/activation_grid.py",
 ]
