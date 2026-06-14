@@ -7,7 +7,7 @@ print("HistoDyn::BioGater")
 print("="*50)
 
 print("\n[2/5] Training models...")
-train_sims.s()
+# train_sims.s()
 print("\n[3/5] Evaluating...")
 
 print("\n[4/5] Generating figures...")
