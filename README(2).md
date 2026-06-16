@@ -2,7 +2,7 @@
 
 This repository contains Python scripts for running experiments and generating figures related to gating mechanisms, ablation analysis, activation behavior, and figure generation.
 
-You can run either one specific experiment script or all available scripts together using `src/run\_all.py`.
+You can run either one specific experiment script or all available scripts together using `src/run_all.py`.
 
 \---
 
@@ -41,7 +41,7 @@ If Git is missing, install it using your system package manager.
 ## 2\. Clone the repository
 
 ```bash
-git clone https://github.com/fortunab/gating\_mech.git
+git clone https://github.com/fortunab/gating_mech.git
 cd gating\_mech
 ```
 
@@ -91,18 +91,18 @@ python3 -m venv .venv
 
 ## Option A: Run everything
 
-Use this command to execute all available experiment scripts through `run\_all.py`.
+Use this command to execute all available experiment scripts through `run_all.py`.
 
 ### Windows
 
 ```powershell
-.\\.venv\\Scripts\\python.exe src\\run\_all.py
+.\\.venv\\Scripts\\python.exe src\\run_all.py
 ```
 
 ### Linux/macOS
 
 ```bash
-./.venv/bin/python src/run\_all.py
+./.venv/bin/python src/run_all.py
 ```
 
 \---
@@ -116,9 +116,9 @@ You can run each experiment separately.
 ```powershell
 .\\.venv\\Scripts\\python.exe src\\ts.py
 .\\.venv\\Scripts\\python.exe src\\fig.py
-.\\.venv\\Scripts\\python.exe src\\gate\_figures.py
-.\\.venv\\Scripts\\python.exe src\\federated\_and\_ablation.py
-.\\.venv\\Scripts\\python.exe src\\activation\_grid.py
+.\\.venv\\Scripts\\python.exe src\\gate_figures.py
+.\\.venv\\Scripts\\python.exe src\\federated_and_ablation.py
+.\\.venv\\Scripts\\python.exe src\\activation_grid.py
 ```
 
 ### Linux/macOS
@@ -126,9 +126,9 @@ You can run each experiment separately.
 ```bash
 ./.venv/bin/python src/ts.py
 ./.venv/bin/python src/fig.py
-./.venv/bin/python src/gate\_figures.py
-./.venv/bin/python src/federated\_and\_ablation.py
-./.venv/bin/python src/activation\_grid.py
+./.venv/bin/python src/gate_figures.py
+./.venv/bin/python src/federated_and_ablation.py
+./.venv/bin/python src/activation_grid.py
 ```
 
 \---
@@ -162,30 +162,11 @@ After activation, you can run scripts like this:
 ```bash
 python src/ts.py
 python src/fig.py
-python src/gate\_figures.py
-python src/federated\_and\_ablation.py
-python src/activation\_grid.py
-python src/run\_all.py
+python src/gate_figures.py
+python src/federated_and_ablation.py
+python src/activation_grid.py
+python src/run_all.py
 ```
-
-\---
-
-## Repository structure
-
-```text
-gating\_mech/
-├── src/
-│   ├── ts.py
-│   ├── fig.py
-│   ├── gate\_figures.py
-│   ├── federated\_and\_ablation.py
-│   ├── activation\_grid.py
-│   └── run\_all.py
-├── requirements.txt
-└── README.md
-```
-
-\---
 
 ## Output
 
@@ -196,7 +177,7 @@ results/
 figures/
 ```
 
-If these folders do not exist, the scripts may create them automatically, depending on the implementation.
+If these folders do not exist, the scripts may create them automatically.
 
 \---
 
@@ -205,5 +186,5 @@ If these folders do not exist, the scripts may create them automatically, depend
 * Use the virtual environment commands to avoid dependency conflicts with other Python projects.
 * On Windows, the non-activation commands are recommended because they avoid PowerShell execution-policy issues.
 * To run only one experiment, execute only the corresponding script from `src/`.
-* To run the full pipeline, execute `src/run\_all.py`.
+* To run the full pipeline, execute `src/run_all.py`.
 
