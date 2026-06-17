@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "HistoDyn::BioGater"
+message: "If you use this repository, please cite the corresponding paper."
+type: software
+authors:
+  - family-names: Babuc
+    given-names: Diogen
+  - family-names: Fortiș
+    given-names: Teodor-Florin
+year: 2026

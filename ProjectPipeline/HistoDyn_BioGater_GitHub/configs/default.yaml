@@ -1,0 +1,16 @@
+seed: 42
+img_size: 75
+num_classes: 8
+patch_size: 5
+embed_dim: 64
+num_blocks: 2
+top_k: 4
+l1_lambda: 0.01
+batch_size: 64
+epochs: 10
+learning_rate: 0.001
+decay_steps: 10000
+weight_decay: 0.0001
+train_size: 4000
+val_size: 500
+test_size: 500
