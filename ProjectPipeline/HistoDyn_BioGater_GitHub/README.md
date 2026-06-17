@@ -230,16 +230,16 @@ Important values:
 
 ```yaml
 seed: 42
-img\_size: 75
-num\_classes: 8
-patch\_size: 5
-embed\_dim: 64
-num\_blocks: 2
-top\_k: 4
-l1\_lambda: 0.01
-batch\_size: 64
+img_size: 75
+num_classes: 8
+patch_size: 5
+embed_dim: 64
+num_blocks: 2
+top_k: 4
+l1_lambda: 0.01
+batch_size: 64
 epochs: 10
-learning\_rate: 0.001
+learning_rate: 0.001
 ```
 
 To change training settings, edit this file or pass another config:
@@ -317,7 +317,10 @@ python scripts/plot_gates.py
 
 generates a figure with learned gate values.
 
-
+### Deactivate venv
+```powershell
+deactivate
+```
 
 
 
