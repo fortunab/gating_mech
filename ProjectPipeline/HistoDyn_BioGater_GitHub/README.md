@@ -11,7 +11,7 @@ The associated paper describes BioGater as a dynamically sparse architecture for
 ## Repository structure
 
 ```text
-HistoDyn\_BioGater\_GitHub/
+HistoDyn_BioGater_GitHub/
 ├── README.md
 ├── requirements.txt
 ├── environment.yml
@@ -28,8 +28,8 @@ HistoDyn\_BioGater\_GitHub/
 ├── scripts/
 │   ├── train.py
 │   ├── evaluate.py
-│   ├── plot\_gates.py
-│   └── run\_all.py
+│   ├── plot_gates.py
+│   └── run_all.py
 ├── notebooks/
 └── docs/
 ```
@@ -112,13 +112,13 @@ python scripts/train.py --model depthwise
 Run all experiments:
 
 ```bash
-python scripts/run\_all.py
+python scripts/run_all.py
 ```
 
 Plot learned gate values:
 
 ```bash
-python scripts/plot\_gates.py
+python scripts/plot_gates.py
 ```
 
 ### 5\. Deactivate the environment
@@ -173,14 +173,6 @@ conda deactivate
 
 \---
 
-## Dataset
-
-The project uses TensorFlow Datasets:
-
-```python
-tfds.load("colorectal\_histology")
-```
-
 Default split used in the scripts:
 
 ```text
@@ -214,7 +206,7 @@ python -m pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 python scripts/train.py --model biogater
 python scripts/train.py --model convmixer
-python scripts/plot\_gates.py
+python scripts/plot_gates.py
 deactivate
 ```
 
@@ -308,11 +300,11 @@ Ablation-style lightweight baseline.
 BioGater exposes operation gates from the dynamic cheap-operation bank. These gates can be interpreted as concept-level indicators:
 
 ```text
-std\_norm       -> stain / illumination normalization
-scale\_large    -> contrast amplification
+std_norm       -> stain / illumination normalization
+scale_large    -> contrast amplification
 sign           -> edge / polarity behavior
 binarize       -> morphological discretization
-mean\_subtract  -> statistical centering
+mean_subtract  -> statistical centering
 abs            -> magnitude extraction
 reverse        -> texture-order shift
 ```
@@ -320,7 +312,7 @@ reverse        -> texture-order shift
 The script:
 
 ```bash
-python scripts/plot\_gates.py
+python scripts/plot_gates.py
 ```
 
 generates a figure with learned gate values.
