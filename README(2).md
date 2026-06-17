@@ -74,8 +74,8 @@ python3 -m venv .venv
 ### Windows
 
 ```powershell
-.\\.venv\\Scripts\\python.exe -m pip install --upgrade pip
-.\\.venv\\Scripts\\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
 ### Linux/macOS
@@ -96,7 +96,7 @@ Use this command to execute all available experiment scripts through `run_all.py
 ### Windows
 
 ```powershell
-.\\.venv\\Scripts\\python.exe src\\run_all.py
+.\.venv\Scripts\python.exe src\run_all.py
 ```
 
 ### Linux/macOS
@@ -114,11 +114,11 @@ You can run each experiment separately.
 ### Windows
 
 ```powershell
-.\\.venv\\Scripts\\python.exe src\\ts.py
-.\\.venv\\Scripts\\python.exe src\\fig.py
-.\\.venv\\Scripts\\python.exe src\\gate_figures.py
-.\\.venv\\Scripts\\python.exe src\\federated_and_ablation.py
-.\\.venv\\Scripts\\python.exe src\\activation_grid.py
+.\.venv\Scripts\python.exe src\ts.py
+.\.venv\Scripts\python.exe src\fig.py
+.\.venv\Scripts\python.exe src\gate_figures.py
+.\.venv\Scripts\python.exe src\federated_and_ablation.py
+.\.venv\Scripts\python.exe src\activation_grid.py
 ```
 
 ### Linux/macOS
@@ -140,13 +140,13 @@ Instead of writing the full `.venv` Python path every time, you can activate the
 ### Windows CMD
 
 ```cmd
-.venv\\Scripts\\activate.bat
+.venv\Scripts\activate.bat
 ```
 
 ### Windows PowerShell
 
 ```powershell
-.venv\\Scripts\\Activate.ps1
+.venv\Scripts\Activate.ps1
 ```
 
 If PowerShell blocks script execution, use the non-activation commands above instead.
@@ -166,6 +166,12 @@ python src/gate_figures.py
 python src/federated_and_ablation.py
 python src/activation_grid.py
 python src/run_all.py
+```
+
+### Deactivate venv
+
+```powershell
+deactivate
 ```
 
 ## Output
