@@ -41,7 +41,7 @@ def load_cifar10(
     batch_size: int = 64,
     seed: int = 42,
 ):
-    """Optional sanity-check dataset used in the original notebook."""
+    """Optional (for adv.)."""
     def preprocess(example):
         image = tf.image.resize(example["image"], [img_size, img_size])
         image = tf.cast(image, tf.float32) / 255.0
