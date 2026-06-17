@@ -255,7 +255,7 @@ python scripts/train.py --config configs/default.yaml --model biogater
 Training produces:
 
 ```text
-outputs/models/biogater/best\_model.keras
+outputs/models/biogater/best_model.keras
 outputs/models/biogater/results.json
 ```
 
