@@ -4,7 +4,7 @@ Biologically Interpretable Dynamic Gating Architecture for Computational Patholo
 
 This repository contains a reproducible TensorFlow implementation of **HistoDyn::BioGater**, a lightweight dynamic-gating model for colorectal histology classification. The model replaces dense always-on computation with interpretable cheap operations such as normalization, contrast amplification, polarity mapping, binarization, and texture shifts. A learnable gate controls which operations are emphasized.
 
-The associated paper describes BioGater as a dynamically sparse architecture for computational pathology, using biologically grounded operations regulated by top-k learning gates and L1 sparsity. It reports improvements over RandomOp Mixer, ConvMixer, and pruned baselines in accuracy, calibration, and energy efficiency.
+The associated paper describes BioGater as a dynamically sparse architecture for computational pathology, using biologically grounded operations regulated by top-k learning gates and L1 sparsity. It reports improvements over RandomOp Mixer, ConvMixer, and pruned baselines in accuracy, calibration, and energy efficiency. For better results, use 40 or 50 epochs, instead of 10 for each block layer. 
 
 \---
 
