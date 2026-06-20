@@ -89,6 +89,18 @@ pip install -r requirements.txt
 
 This installs TensorFlow, TensorFlow Datasets, NumPy, Matplotlib, scikit-learn, Jupyter, and YAML support.
 
+For Python 3.12 + Tensorflow 2.20, use:
+```bash
+pip uninstall -y protobuf tensorflow tensorflow-intel tensorflow-datasets tensorflow-metadata tensorboard ml-dtypes
+
+pip install tensorflow==2.20.0
+pip install protobuf==6.31.1
+pip install tensorflow-datasets==4.9.7
+pip install tensorflow-metadata==1.17.2
+pip install tensorboard==2.20.0
+pip install ml-dtypes==0.5.4
+```
+
 ### 4\. Run the required commands
 
 Train BioGater:
