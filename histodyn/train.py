@@ -73,7 +73,7 @@ def get_builder(name, cfg):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", choices=["biogater", "randomop", "convmixer", "pruned_resnet"], default="biogater")
-    ap.add_argument("--epochs", type=int, default=10)
+    ap.add_argument("--epochs", type=int, default=50)
     ap.add_argument("--batch_size", type=int, default=32)
     ap.add_argument("--img_size", type=int, default=150)
     ap.add_argument("--patch_size", type=int, default=10)
